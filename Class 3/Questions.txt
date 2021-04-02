@@ -1,0 +1,24 @@
+Q1: Store three integers in x, y and z. Print their sum.
+Q2: Store three integers in x, y and z. Print their product.
+Q3: Store five doubles in variables. Print their average.
+Q4: Take input from user. store 3 doubles in variables. Print their average.
+ 
+Q6: Write a program to print the area of a rectangle of sides 2 and 3 units respectively.
+Q7: Length and breadth of a rectangle are 5 and 7 respectively. Write a program to calculate the area and perimeter of the rectangle.
+Q8: Write a program to add 8 to the number 2345 and then divide it by 3.Now, the modulus of the quotient is taken with 5 and then multiply the resultant value by 5.  	Display the final result.
+Q9: Write a program to convert Fahrenheit into Celsius (user input).
+Q10: Take two int values from user and print greatest among them.
+Q11: Take age as input of 3 people and determine oldest and youngest among them.
+Q12: Write a program to find square of a number.
+	E.g.-
+	INPUT : 2        OUTPUT : 4
+	INPUT : 5        OUTPUT : 25
+
+Q13: If the marks of Robert in three subjects are entered through keyboard (each out of 100 ), Write a program to calculate his total marks and percentage marks.
+Q14: Take 3 inputs from user and check 
+	1- Is all are equal
+	2- Is any of two are equal
+
+Q15: Take age of user, And tell him whether he is eligible to vote or not.
+Q16: Take obtained marks of student (Out of 100) and tell him Grade.
+
