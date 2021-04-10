@@ -127,13 +127,20 @@ void main() {
 
   print("After removing elements in specified range the list is: ${lis}");
 
-  // TODO
-  // 1- .removeWhere()
-  // 2- .retainWhere()
+  // To remove elements with specific condition
+  lis.removeWhere((element) => element % 2 == 0 && element > 0);
+
+  print("After removing element by applying condition, the list is: ${lis}");
+
+  // To retain elements in list which holds specific condition and remove other elements
+  lis.retainWhere((element) => element % 2 == 0);
+
+  print(
+      "After retaining elements that holds specified condition, the list is: ${lis}");
 
   // --------------------------------------------------------------------
 
-  // Map (dictionary)   ----- (key, value) pair
+  // Map (dictionary)   ----->  (key, value) pair
 
   var mp = {"Name": "John", "Age": 20, 'Class': 12};
   print(mp);
@@ -147,4 +154,87 @@ void main() {
   // To find length of map / dictionary
 
   print("Length of Map is: ${mp.length}");
+
+  // To put (key, value) in existing Map if it not exist
+  mp.putIfAbsent("Address", () => "USA");
+  print("After applying .putIfAbsent(), the Map is: ${mp}");
+
+  // To check whether the dictionary/map is empty or not
+  print(mp.isEmpty);
+  if (mp.isEmpty) {
+    print("Map is Empty");
+  } else {
+    print("Map is not Empty");
+  }
+
+// Checking for Empty map
+  var empMap = {};
+  print('\nChecking for ${empMap}');
+  if (empMap.isEmpty) {
+    print("Map is Empty");
+  } else {
+    print("Map is not Empty");
+  }
+
+  // To check whether map is not Empty
+  print('\nChecking for ${mp}');
+  if (mp.isNotEmpty) {
+    print("Map is not Empty");
+  } else {
+    print("Map is Empty");
+  }
+
+  // To remove pair of map with specific key
+  mp.remove("Address");
+  print("After removing Address, the Map is: ${mp}");
+
+  // To remove pair, which holds specified condition
+  // TODO
+  //    .removeWhere()
+
+  // To add/concat multiple Maps/Dictionies at once
+  // ------ 2 ways ------
+  // 1- Using ..addAll()
+  // 2- Using ... Operator
+
+  var mp1 = {};
+  var mp2 = {"Name": "ABC"};
+  var mp3 = {"Age": 20};
+  var mp4 = {"Address": "Pakistan"};
+
+  var new_map1 = mp1..addAll(mp2)..addAll(mp3)..addAll(mp4);
+  print("\nAfter concating mutiple Map, the result is: ${new_map1}");
+
+  // By using second method
+  var new_map2 = {...mp2, ...mp3, ...mp4};
+
+  print("After concating with second way, the result is: ${new_map2}");
+
+  // To check whether specified 'key' is present in Map or not
+
+  if (new_map1.containsKey("Name")) {
+    print("Name is present as key in new_map1");
+  } else {
+    print("Name is not present as key in new_map1");
+  }
+
+  // To check whether specified 'value' is present in Map or not
+  if (new_map1.containsValue("USA")) {
+    print("USA is present as value in new_map1");
+  } else {
+    print("USA is not present as value in new_map1");
+  }
+
+  // To create map using lists (First will become key, Second will become value)
+  var lst1 = [1, 2, 3];
+  var lst2 = ['Apple', "Mango", "Orange"];
+
+  var m = Map.fromIterables(lst1, lst2);
+  print("\nAfter using .fromIterables() method, the created map is: ${m}\n");
+
+  // To iterate over the map
+
+  m.forEach((key, value) {
+    print("Key is: ${key} ------ Value is: ${value}");
+  });
 }
