@@ -3,6 +3,6 @@ Q2- Print table of number(user choice) to n(user choice) times
 Q3- Take integer inputs from user until he/she presses q ( Ask to press q to quit after every integer input ). Print average and product of all numbers.
 Q4- Print factorial of any number (user's choice)
 Q5- Take 10 number, store them in list and Print all elements of an array using for loop.
-Q6- Print multiplication table of 14 from an array in which multiplication table of 12 is stored.
+Q6- Store integer data in 2 lists(each containing 5 element) and multiply both lists and store result in third list.
 Q7- You are given with an array of integer elements. Make a new array which will store square of elements of previous array.
 Q8- From 1 to 101, make two array, one containing all even numbers and other containing all odd numbers.
