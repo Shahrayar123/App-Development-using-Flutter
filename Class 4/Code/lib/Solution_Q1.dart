@@ -3,16 +3,20 @@
 import 'dart:io';
 
 void main() {
-  // List<int> list_ = [];
+  // creating an empty list
   var list_ = [];
 
   const LOWER_RANGE = 0;
   const UPPER_RANGE = 10;
 
-  // for (int i = LOWER_RANGE; i < UPPER_RANGE; i++) {
-  //   print("Enter number at index ${i}");
-  //   list_.add(int.parse(stdin.readLineSync()));
-  // }
+  // variable that stores number enterd by the user
+  var temp;
+
+  for (int i = LOWER_RANGE; i < UPPER_RANGE; i++) {
+    print("Enter number at index ${i}");
+    temp = stdin.readLineSync();
+    list_.add(temp);
+  }
 
   print("Elements you entered in list are:\n${list_}");
 }
