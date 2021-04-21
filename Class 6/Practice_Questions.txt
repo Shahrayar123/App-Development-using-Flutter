@@ -1,0 +1,36 @@
+Related to Functions
+
+Q1- Write a function to calculate area and perimeter of a rectangle.
+Q2- Write a function to calculate power of a number raised to other. E.g.- a^b.
+// Q3- Write function that print user entered number upto specified times
+Q4- Write a function to check if a number is even or not.
+Q5- Write a program which will ask the user to enter his/her marks (out of 100). Define a method that will display grades according to the marks entered as below:
+	Marks        Grade
+	91-100         AA
+	81-90          AB
+	71-80          BB
+	61-70          BC
+	51-60          CD
+	41-50          DD
+	<=40          Fail 	
+
+Related to Classes
+
+Q6- Create a class named 'Member' having the following members:
+    Data members
+	1 - Name
+	2 - Age
+	3 - Phone number
+	4 - Address
+	5 - Salary
+    It also has a method named 'printSalary' which prints the salary of the members.
+    Two classes 'Employee' and 'Manager' inherits the 'Member' class. The 'Employee' and 'Manager' classes have data members 'specialization' and 'department'       	respectively. Now, assign name, age, phone number, address and salary to an employee and a manager by making an object of both of these classes and print the    	same.
+    
+Q7- Create a class named 'Shape' with a method to print "This is This is shape". Then create two other classes named 'Rectangle', 'Circle' inheriting the Shape 	   class, both having a method to print "This is rectangular shape" and "This is circular shape" respectively. Create a subclass 'Square' of 'Rectangle' having a method to print "Square is a rectangle". Now call the method of 'Shape' and 'Rectangle' class by the object of 'Square' class.
+
+Q8- Create a Student class and initialize it with name and roll number. Make methods to :
+	1. Display - It should display all informations of the student.
+	2. setAge - It should assign age to student
+	3. setMarks - It should assign marks to the student.
+
+
