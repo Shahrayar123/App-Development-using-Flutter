@@ -1,16 +1,33 @@
-# ecommerce
+# Ecommerce App Pages
 
-A new Flutter project.
+### Topics Covered in Class
+1) Padding
+2) Margin
+3) Align
+4) Positioned
+5) Stack
+6) Mediaquery
+7) Navigator
+8) ListTile
+9) Widget
+10) Circleavatar
+11) Images
+12) Gradient
+13) Boxdecoration
 
-## Getting Started
+<p align="center">  
+  <img src="https://github.com/Shahrayar123/App-Development-using-Flutter/blob/main/Class%209/Main_Page.png" width="350">
+</p>
 
-This project is a starting point for a Flutter application.
+<hr>
 
-A few resources to get you started if this is your first Flutter project:
+<p align="center">  
+  <img src="https://github.com/Shahrayar123/App-Development-using-Flutter/blob/main/Class%209/User_Info.png" width="350" alt="User Info Page">
+</p>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+<hr>
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+<p align="center">  
+  <img src="https://github.com/Shahrayar123/App-Development-using-Flutter/blob/main/Class%209/History.png" width="350" alt="History Page">
+</p>
