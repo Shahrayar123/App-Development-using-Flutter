@@ -1,16 +1,33 @@
-# class10
+# Topics Covered in Class
+1) ListView
+2) Icon
+3) ListView.builder
+4) GridView.count
+5) Drawer
+6) DefaultTabController
+7) TabBar
+8) TabBarView
+9) SetState
+10) Image.asset()
+11) Image.network()
 
-A new Flutter project.
+<hr>
 
-## Getting Started
+## Basic Counter App
+ - Increment
+ - Decrement
+ - Set to default value
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+<p align="center">  
+  <img src="https://github.com/Shahrayar123/App-Development-using-Flutter/blob/main/Class%2010/Set_State.png" width="350">
+</p>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+<br>
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Tab Bar Example
+
+<p align="center">  
+  <img src="https://github.com/Shahrayar123/App-Development-using-Flutter/blob/main/Class%2010/Tab_Controller.png" width="350" alt="User Info Page">
+</p>
+
