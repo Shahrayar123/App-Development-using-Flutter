@@ -9,7 +9,7 @@ class Calculator extends StatefulWidget {
 class _CalculatorState extends State<Calculator> {
   var equation = "";
   var result = "";
-  var temp = "";
+  var message = "";
 
   computeResult() {
     result = equation;
@@ -21,10 +21,6 @@ class _CalculatorState extends State<Calculator> {
 
     setState(() {
       equation = eval.toString();
-
-      // temp = r;
-      // r = result;
-      // result = temp;
     });
   }
 
@@ -124,6 +120,18 @@ class _CalculatorState extends State<Calculator> {
     });
   }
 
+  helloMessage() {
+    setState(() {
+      message = "Made By Shahrayar";
+    });
+  }
+
+  clearMessage() {
+    setState(() {
+      message = "";
+    });
+  }
+
   Widget putButton(var text, var toPress,
       {btnColorCode = 0xff566573, textColor = Colors.white}) {
     return ElevatedButton(
@@ -141,6 +149,7 @@ class _CalculatorState extends State<Calculator> {
     setState(() {
       equation = "";
       result = "";
+      message = "";
     });
   }
 
@@ -160,6 +169,13 @@ class _CalculatorState extends State<Calculator> {
 
       body: Stack(
         children: [
+          Positioned(
+              top: 10,
+              right: 75,
+              child: Text(
+                message,
+                style: TextStyle(color: Colors.white, fontSize: 20),
+              )),
           Positioned(
               right: 30,
               top: 70,
@@ -181,7 +197,7 @@ class _CalculatorState extends State<Calculator> {
             child: Container(
               // height: 451,
 
-              height: MediaQuery.of(context).size.height * 0.67,
+              height: MediaQuery.of(context).size.height * 0.62,
 
               // color: Colors.red,
 
@@ -225,7 +241,8 @@ class _CalculatorState extends State<Calculator> {
                     textColor: Colors.green,
                   ),
                   ElevatedButton(
-                      onPressed: () {},
+                      onPressed: helloMessage,
+                      onLongPress: clearMessage,
                       style: ElevatedButton.styleFrom(
                         shape: CircleBorder(),
                         primary: Color(0xff566573),

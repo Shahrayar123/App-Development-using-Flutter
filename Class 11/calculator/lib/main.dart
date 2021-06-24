@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
             title: Center(
                 child: Text(
               "Calculator App",
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
             )),
             backgroundColor: Color(0xff232F34),
             shadowColor: Colors.white,
