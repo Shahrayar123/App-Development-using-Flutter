@@ -32,5 +32,11 @@
 | :----------------------------------: | :----------------------------------: |  
 | <img src="https://github.com/Shahrayar123/App-Development-using-Flutter/blob/main/Class%208/Login_Page_1.png" width="350"> | <img src="https://github.com/Shahrayar123/App-Development-using-Flutter/blob/main/Class%208/Login_Page_2.png" width="350"> |
 
+<br>
+
+|              App Preview             |             App Preview           |     
+| :----------------------------------: | :----------------------------------: |  
+| <img src="https://github.com/Shahrayar123/App-Development-using-Flutter/blob/main/Class%2012/Api_data_page_1.png" width="350"> | <img src="https://github.com/Shahrayar123/App-Development-using-Flutter/blob/main/Class%2012/Api_data_page_2.png" width="350"> |
+
 
 
