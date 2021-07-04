@@ -2,6 +2,8 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
+import 'user_details.dart';
+
 class Api extends StatefulWidget {
   @override
   _ApiState createState() => _ApiState();
@@ -18,7 +20,14 @@ class _ApiState extends State<Api> {
 
     for (var user in json_data) {
       UserInformation user_obj = UserInformation(
-          user['picture'], user['name'], user['company'], user['balance']);
+          user['picture'],
+          user['name'],
+          user['email'],
+          user['balance'],
+          user['gender'],
+          user['address'],
+          user['company'],
+          user['age']);
 
       users_info_list.add(user_obj);
     }
@@ -43,10 +52,22 @@ class _ApiState extends State<Api> {
                     itemCount: snapshot.data.length,
                     itemBuilder: (context, index) {
                       return ListTile(
-                        leading: snapshot.data[index].picture,
-                        title: snapshot.data[index].name,
-                        subtitle: snapshot.data[index].company,
-                        trailing: snapshot.data[index].data.balance,
+                        leading: CircleAvatar(
+                          radius: 25,
+                          backgroundColor: Colors.grey,
+                          backgroundImage:
+                              NetworkImage(snapshot.data[index].picture),
+                        ),
+                        title: Text(snapshot.data[index].name),
+                        subtitle: Text(snapshot.data[index].email),
+                        trailing: Text(snapshot.data[index].balance),
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      UserDetail(snapshot.data[index])));
+                        },
                       );
                     });
               }
@@ -55,7 +76,8 @@ class _ApiState extends State<Api> {
 }
 
 class UserInformation {
-  var name, company, picture, balance;
+  var name, age, email, picture, balance, gender, address, company;
 
-  UserInformation(this.picture, this.name, this.company, this.balance);
+  UserInformation(this.picture, this.name, this.email, this.balance,
+      this.gender, this.address, this.company, this.age);
 }

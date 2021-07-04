@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
               "API Integration",
             ),
           ),
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.lightBlue[300],
         ),
         body: Api(),
       )),
